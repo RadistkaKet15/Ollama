@@ -1,7 +1,7 @@
 from ollama_ocr import OCRProcessor
 import os
 
-os.environ['OLLAMA_HOST'] = 'http://localhost:11438'
+os.environ['OLLAMA_HOST'] = 'http://127.0.0.1:11434'
 # Отключаем прокси
 os.environ['NO_PROXY'] = '*'
 os.environ['HTTP_PROXY'] = ''
