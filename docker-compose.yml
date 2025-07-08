@@ -4,7 +4,7 @@ services:
   ollama:
     image: ollama/ollama
     ports:
-      - "11434:11434"
+      - "11439:11434"
     volumes:
       - ollama_data:/root/.ollama
     # Для GPU добавьте:
@@ -13,7 +13,7 @@ services:
         reservations:
            devices:
              - driver: nvidia
-               count: 1
+               #count: 1
                capabilities: [gpu]
 
   app:
